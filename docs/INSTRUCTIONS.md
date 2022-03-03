@@ -4,7 +4,11 @@
 Deze leertaak hoort bij sprint Keep Users in Control. Dit is een autonomous leertaak die je individueel uitvoert voor MijnHvA Student.
 
 ## Briefing
-...
+MijnHvA Student is het productteam binnen de HvA dat werkt aan het MijnHvA studentportaal. MijnHvA is het startpunt van alle informatie die studenten nodig hebben voor hun studie. Binnen dit studentportaal leeft de Companion App.
+
+Deze Companion App zal uiteindelijk een grote brochure/tutorial/guide/kennisbank zijn ter ondersteuning van de mijnHva Student app (of latere uitbreidingen hiervan).
+
+In deze sprint wordt het prototype van de Companion App doorontwikkelt. De focus ligt hierbij op het dynamisch renderen van content op basis van data uit de [Companion App REST API](https://companion.api.fdnd.nl/).
 
 ## Doel van deze opdracht
 Je leert hoe je een prototype maakt op basis van een user story en externe data uit een API.
