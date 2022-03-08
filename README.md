@@ -11,7 +11,7 @@
   * [Licentie](#licentie)
 
 ## 📃 Beschrijving
-Dit is de repo voor de mijnHvA applicatie waar de content wordt gerenderd met behulp van de REST API.
+Dit is de repo voor de mijnHvA applicatie waar de content wordt gerenderd met behulp van de REST API.  
 [🌐 Live](http://mijnhva-jd.student.fdnd.nl/)
 
 ## 🔮 Kenmerken
