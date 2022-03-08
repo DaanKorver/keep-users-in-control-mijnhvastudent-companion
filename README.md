@@ -1,5 +1,5 @@
 # 🖱️ MijnHVA
-<!-- Geef je project een titeledadwadwa en schrijf in één zin wat het is -->
+![Mockup MijnHvA](https://github.com/DaanKorver/keep-users-in-control-mijnhvastudent-companion/blob/main/docs/mockup.png?raw=true)
 
 ## 📚 Inhoudsopgave
 
