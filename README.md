@@ -11,7 +11,7 @@
   * [Licentie](#licentie)
 
 ## 📃 Beschrijving
-Dit is de repo voor het 2de scrollbook project waarbij wij de booktrailers voor 'x' en 'y' hebben ontwikkeld.  
+Dit is de repo voor de mijnHvA applicatie waar de content wordt gerenderd met behulp van de REST API.
 [🌐 Live](http://mijnhva-jd.student.fdnd.nl/)
 
 ## 🔮 Kenmerken
@@ -31,6 +31,8 @@ cd keep-users-in-control-mijnhvastudent-companion
 ```
 
 ## Bronnen
+- [👫 Team 1: MijnHvA Project](https://github.com/boudewijnbout/mijnhvastudent-companion-startpage-autonomous)
+- [🎨 Styleguide](https://www.figma.com/file/xKeoqRHU91N7f1n43TCtV5/MijnHvA_design_Course_FrontEndDD?node-id=0%3A1)
 
 ## Licentie
 
