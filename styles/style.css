@@ -1,0 +1,772 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+/* Variables */
+:root {
+    --primary-bg: #25167A;
+    --secondary-bg: #E1DEF4;
+    --primary-color: #25167A;
+    --secondary-color: #E1DEF4;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Html smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+    color: #fff;
+    background: var(--primary-bg);
+  }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+}
+
+section {
+    padding: 0 0 0 2rem;
+}
+
+/* Section title */
+section h3 {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+    font-size: 1.2rem;  
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Seperator line */
+.seperator {
+    width: 60px;
+    height: 2px;
+    background: var(--secondary-bg);
+    display: block;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+header {
+    height: 55px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 10px 50px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: transparent;
+    z-index: 999;
+    top: 0;
+    background: #fff;
+}
+
+/* Logo wrapper */
+.logo-wrapper {
+    align-items: center;
+    display: flex;
+    left: 25px;
+    position: relative;
+}
+
+.logo-wrapper svg {
+    fill: #25167A;
+    width: 150px;
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+# Header Navigation Desktop
+--------------------------------------------------------------*/
+header nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 10px;
+    transition: 200ms;
+}
+
+header nav ul li a {
+    color: var(--primary-color);
+    font-size: 0.875em;
+}
+
+/* Aanmeld btn */
+header nav ul li:nth-child(6) a {
+    background: #E1DEF4;
+    padding: 6px 10px;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* Aanmeld btn stripe */
+header nav ul li:nth-child(6) a:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 20px;
+    background: #C0C0C0;
+    position: absolute;
+    left: -10px;
+    top: 5px;
+}
+
+/* Header active menu item */
+header nav ul li a.active {
+    font-weight: bold;
+    border-bottom: 1px solid #25167A;
+}
+
+/*--------------------------------------------------------------
+# Mobile navigation
+--------------------------------------------------------------*/
+.mobile-nav{
+    position:fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index:1;
+    transform: translateY(-100%);
+    transition: all 0.45s;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: var(--secondary-bg);
+}
+
+.mobile-nav.open {
+    transform: translateY(0);
+}
+
+.mobile-nav nav ul{
+    list-style: none; 
+    margin-top: 5rem;
+}
+.mobile-nav nav ul li{
+margin-bottom: 2rem;
+cursor: pointer;
+}
+
+/*--------------------------------------------------------------
+# Hamburger icon
+--------------------------------------------------------------*/
+.hamburger {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s;
+    position: absolute;   
+    top: 10px;
+    right: 20px;
+}
+
+.hamburger:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 3px solid var(--primary-color);
+    transform: scale(0);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+/* Hamburger bars */
+.hamburger div {
+    position: relative;
+    height: 4px;
+    margin: 8px 0;
+    background: var(--primary-color);
+    border-radius: 999px;
+    transform-origin: 50% 50%;
+    transition: 0.25s;
+}
+
+.hamburger div:nth-child(2) {
+    margin-left: 10px;
+    transition: 0.25s;
+}
+
+.hamburger div:nth-child(3) {
+    margin-left: 20px;
+    transition: 0.25s;
+}
+
+/*--------------------------------------------------------------
+# Banner Section
+--------------------------------------------------------------*/
+.banner { 
+    background-image: url('../assets/images/wave.png');
+    height: 400px;
+    background-repeat: no-repeat;
+    /* margin-top: 55px; */
+    background-position: bottom left;
+    background-size: cover;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Banner inner */
+.banner-inner {
+    position: relative;
+    top: 65px;
+}
+
+/* Banner titles */
+.banner h1, h2 {
+    color: #fff;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.2),
+    0px 8px 13px rgba(0,0,0,0.1),
+    0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.banner h1 {
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+.banner h2 {
+    font-size: 1.3rem;
+}
+
+/*--------------------------------------------------------------
+# Banner buttons
+--------------------------------------------------------------*/
+.banner-btns {
+    position: relative;
+    top: 30px;
+}
+
+.banner-btns a {
+    padding: 8px 11px;
+    border-radius: 20px;
+    transition: 200ms;
+    top: 0;
+    position: relative;
+}  
+
+.banner-btns a:nth-child(1) {
+    background: var(--secondary-bg);
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.banner-btns a:hover {
+    top: -5px;
+}
+
+.banner-btns a:nth-child(2) {
+    background: var(--primary-bg);
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Information tabs Section
+--------------------------------------------------------------*/
+.information-tabs {
+    padding: 1rem 1rem;
+}
+
+/* List of items */
+.information-tabs ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+}
+
+.information-tabs ul li {
+    transition: 300ms;
+}
+
+.information-tabs ul h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Specific item */
+.information-tabs ul li a {
+    border: 1px solid var(--secondary-bg);
+    padding: 15px;
+    display: flex;
+    cursor: pointer;
+}
+
+/* Hover state */
+.information-tabs ul li:hover {
+    background: var(--secondary-bg);
+}
+
+.information-tabs ul li a.active {
+    background: var(--secondary-bg);
+    color: var(--primary-color);
+    border-color: var(--secondary-bg);
+}
+
+/* Information tab content */
+.tab-content {
+    margin-top: 40px;
+}
+
+.tab-panel {
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr;
+    display: none;
+}
+
+.tab-panel.active {
+    display: grid;
+}
+
+.tab-panel p {
+    color: #585A61;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.tab-panel video {
+    width: 100%;
+    height: auto;
+    /* padding-left: 3rem; */
+    margin-top: 20px;
+}
+
+/*--------------------------------------------------------------
+# Useful Information Section
+--------------------------------------------------------------*/
+.useful-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 1rem 1rem;
+}
+
+.useful-information article {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+}
+
+.useful-information article h4 {
+    color: var(--primary-color);
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+}
+
+.useful-information article hr {
+    border: 0;
+    height: 1px;
+    background: var(--secondary-bg);
+}
+
+.useful-information p {
+    color: #585A61;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+/* Useful information links */
+.useful-information ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.useful-information ul li {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.useful-information ul li:before {
+    content: '';
+    background: url('../assets/images/chevron-right.svg');
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.useful-information ul li a {
+    color: #25167A;
+}
+
+/*--------------------------------------------------------------
+# Instructions
+--------------------------------------------------------------*/
+.instructions {
+   margin-bottom: 1rem;
+   padding: 1rem 1rem;
+}
+
+.instructions-slider {
+    display: grid;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 20px;
+    cursor: grab;
+}
+
+/* Hide horizontal scrollbar */
+.instructions-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Instruction item */
+.instructions article {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    width: 80vw;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Instruction image */
+.instructions article img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Instruction content */
+.instruction-content {
+    padding: 0 1rem 1.5rem 1rem;
+}
+
+/* Instruction title */
+.instructions article h4 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: .75rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+/* Instruction seperator line */
+.instructions hr {
+    border: 0;
+    height: 1px;
+    background: var(--secondary-bg);
+}
+
+/* Instruction description */
+.instructions article p {
+    line-height: 1.6;
+    margin-top: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+/* Read more btn */
+.instructions article a {
+    background: var(--secondary-bg);
+    color: var(--primary-color);
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+/*--------------------------------------------------------------
+# FAQ
+--------------------------------------------------------------*/
+.faq {
+    background: #F2F1F8;
+    padding: 1rem 1rem;
+}
+
+.faq-questions article {
+    background: #fff;
+    padding: 1rem 1rem;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* FAQ title */
+.faq-questions article h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    margin-right: 100px;
+}
+
+#practical-tips-anchor { 
+    margin-top: -100px;        /* Size of fixed header */
+    padding-bottom: 75px; 
+    display: block; 
+  }
+
+/* FAQ seperator */
+.faq-questions hr {
+    border: 0;
+    height: 1px;
+    background: var(--secondary-bg);
+}
+
+/* Questions */
+.faq-questions {
+    margin-top: 20px;
+}
+
+.faq-questions article .faq-questions-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.faq-questions article ul .faq-question {
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.faq-questions article ul .faq-question:before {
+    content: '';
+    background: url(../assets/images/chevron-right.svg);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.faq-questions article ul .faq-question a {
+    color: #585A61; 
+}
+
+/* FAQ Question */
+.faq-question {
+    cursor: pointer;
+}
+
+/* Question accordion */
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-panel ul {
+    margin-left: 1.5rem;
+    list-style: none;
+}
+
+.accordion-panel ul li {
+    color: #585A61;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.accordion-panel p {
+    color: #585A61;
+    line-height: 1.6;
+    margin-top: .5rem;
+    font-size: 0.85rem;
+    display: inline;
+    
+}
+
+.accordion-panel ul li:before {
+    content: '';
+    background: url(../assets/images/chevron-right.svg);
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+    /* padding: 1rem 8rem 1rem 8rem; */
+    padding: 1rem 1rem;
+}
+
+/* Footer grid */
+.footer-grid {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+}
+
+.footer-column {
+    padding: 0;
+    /* margin: 0 auto; */
+    margin-bottom: 15px;
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+}
+
+.footer-column ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+/* Social icons */
+.social-icons img {
+    width: 35px;
+    height: auto;
+    vertical-align: center;
+    position: relative;
+    top: 10px;  
+}
+
+/* Footer bottom bar */
+.footer-bottom-bar {
+    background: var(--secondary-bg);
+    /* padding: 0.3rem 8rem 0.3rem 8rem; */
+    text-align: center;
+    color: var(--primary-color);
+    padding: 0.3rem 0 0.3rem 0;
+}
+
+/*--------------------------------------------------------------
+# Media Querys
+--------------------------------------------------------------*/
+
+/* Medium devices */
+@media (min-width: 40rem) {
+
+    /* Two columns */
+    .useful-information {
+        grid-template-columns: 1fr;
+    }
+
+    /*--------------------------------------------------------------
+    # Instructions
+    --------------------------------------------------------------*/
+    .instructions article {
+        width: 40vw;
+    }
+}
+
+/* Large devices */
+@media (min-width: 60rem) {
+    
+    /* Three columns */
+    section { 
+        padding: 0 8rem 0 8rem;
+    }
+
+    /*--------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    header {
+        padding: 0 5rem 0 5rem;
+    }
+
+    /* Nav menu */
+    header nav {
+        display: flex;
+    }
+
+    /* Logo */
+    .logo-wrapper {
+        left: 0;
+    }
+
+    /* Hamburger */
+    .hamburger {
+        display: none;
+    }
+
+    /*--------------------------------------------------------------
+    # Information tabs
+    --------------------------------------------------------------*/
+    .information-tabs {
+        padding: 0 8rem 0 8rem;
+    }
+
+    .information-tabs ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .tab-panel {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tab-panel video {
+        padding-left: 3rem;
+        margin-top: 0;
+    }
+
+    /*--------------------------------------------------------------
+    # Useful information
+    --------------------------------------------------------------*/
+
+    .useful-information {
+        padding: 0 8rem 0 8rem;
+        margin-top: 3rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .useful-information article {
+        grid-row: 2;
+    }
+
+    /*--------------------------------------------------------------
+    # Instructions
+    --------------------------------------------------------------*/
+    .instructions {
+        padding: 0 8rem 0 8rem;
+        margin-top: 3rem;
+    }
+
+    .instructions article {
+        width: 20vw;
+    }
+
+    /*--------------------------------------------------------------
+    # FAQ
+    --------------------------------------------------------------*/
+    .faq {
+        padding: 1rem 8rem 1rem 8rem;
+    }
+
+    .faq-questions article {
+        margin-bottom: 20px;
+    }
+
+    /*--------------------------------------------------------------
+    # Footer
+    --------------------------------------------------------------*/
+    footer {
+        padding: 1rem 8rem 1rem 8rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

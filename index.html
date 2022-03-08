@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title -->
+    <title>MijnHvA | Companion</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- JS -->
+    <script src="scripts/main.js" defer></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <!-- Logo wrapper -->
+      <div class="logo-wrapper">
+        
+        <!-- Logo svg -->
+        <a href="#">
+        <svg
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0"
+          y="0"
+          viewBox="0 0 182.35 38.63"
+          style="enable-background: new 0 0 182.35 38.63"
+          xml:space="preserve"
+        >
+          <path
+            class="st0"
+            d="M140.13 15.84h.6c.53 0 .7-.23.7-1.18V4.99c0-.96-.18-1.19-.7-1.19h-.6v-.52h3.83v11.37c0 .96.18 1.18.7 1.18h.6v.51h-5.13v-.5zM47.88 15.84h.48c.84 0 .86-.47.86-2.72V7.1c0-2.24-.02-2.71-.88-2.71h-.46v-.52h5.4v.51h-.46c-.86 0-.87.47-.87 2.71v2.5h4.41V7.1c0-2.24-.02-2.71-.88-2.71h-.46v-.52h5.4v.51h-.46c-.86 0-.88.47-.88 2.71v6.02c0 2.24.02 2.72.86 2.72h.48v.51h-5.4v-.51h.46c.86 0 .88-.47.88-2.72V10.2h-4.41v2.91c0 2.24.02 2.72.87 2.72h.46v.51h-5.4v-.5zM64.31 11.95c0-3.49.77-4.07 1.7-4.07.93 0 1.7.58 1.7 4.07 0 3.05-.46 4.09-1.7 4.09s-1.7-1.05-1.7-4.09m-2.63 0c0 2.75 1.54 4.69 4.33 4.69s4.33-1.94 4.33-4.69c0-2.72-1.54-4.67-4.33-4.67-2.78-.01-4.33 1.94-4.33 4.67M74.66 10.37c0-.99.05-2.49 1.4-2.49 1.29 0 1.29 1.71 1.29 2.59 0 .87-.14 2.17-1.3 2.17-1.34.01-1.39-1.27-1.39-2.27m.68 4.13c-.89 0-1.28-.13-1.28-.55 0-.38.24-.7.82-.7 2.28 0 5 0 5-3.05 0-.9-.41-1.53-1.23-2.24.3-.11.51-.18.78-.18.44 0 .14.93 1.19.93.6 0 .89-.47.89-1 0-.57-.32-1.1-.95-1.1-.84-.01-1.54.87-2.49.87-.4 0-1.16-.21-2.11-.21-1.92 0-3.83.87-3.83 3.06 0 1.29.81 2.28 1.99 2.62v.03-.02c-.85.26-1.37.98-1.37 1.87 0 .65.32 1.24 1.05 1.5v.04c-.9.09-2.05.72-2.05 1.79 0 1.92 2.48 2.26 3.94 2.26 2.1 0 4.89-.8 4.89-3.35 0-2.21-1.85-2.59-3.17-2.59h-2.07zm.89 2.09c1.04 0 2.74.04 2.74 1.45 0 1.35-1.7 1.79-2.82 1.79-1.09 0-2.79-.25-2.79-1.64 0-1.56 1.7-1.6 2.87-1.6M84.89 11.47c0-1.73.07-3.59 1.52-3.59 1.3 0 1.3 1.69 1.3 3.59h-2.82zm5.56.51c0-2.73-1.03-4.71-3.96-4.71-2.79 0-4.33 1.95-4.33 4.68 0 2.74 1.54 4.68 4.33 4.68 2.2 0 3.57-1.12 3.79-3.29l-.78-.01c-.04 1.39-.93 2.7-2.46 2.7-2 0-2.15-1.85-2.15-3.62v-.44h5.56zM91.9 13.48h.56c.35 1.5 1.18 2.56 2.83 2.56.89 0 1.75-.53 1.75-1.44 0-1.12-.88-1.37-2.56-1.76-1.3-.3-2.58-.74-2.58-2.55 0-2.1 1.53-3.02 3.46-3.01.79 0 1.35.28 1.93.28.47 0 .74-.14.95-.29h.11v2.82h-.56c-.18-1.16-1.12-2.21-2.35-2.21-.86 0-1.74.32-1.74 1.4 0 .89.46 1.02 2.49 1.5 1.56.35 2.75.84 2.75 2.88 0 2.12-1.73 2.98-3.57 2.97-.82 0-1.72-.28-2.47-.28-.35 0-.71.17-.88.29h-.12v-3.16zM108.1 13.42c-.25 2.17-1.46 3.21-3.63 3.21-2.84 0-4.14-2.13-4.14-4.77 0-3.31 2.37-4.59 4.47-4.59 2.42 0 3.14 1.31 3.14 1.93 0 .84-.44 1.42-1.36 1.42-.72 0-1.17-.51-1.17-1.21 0-.51.25-.6.25-.81 0-.39-.6-.72-1-.72-1.51 0-1.6 2.13-1.6 4.19 0 1.39-.02 3.97 1.93 3.97 1.6 0 2.21-1.19 2.33-2.63l.78.01zM109.07 15.84h.6c.53 0 .7-.23.7-1.19V4.98c0-.96-.17-1.19-.7-1.19h-.6v-.51h3.83v5.46h.04c.51-.86 1.44-1.47 2.73-1.47 1.72 0 2.56 1.03 2.56 2.49v4.89c0 .96.18 1.19.7 1.19h.39v.51h-4.7v-.51h.38c.52 0 .7-.23.7-1.19v-4.43c0-.86 0-1.86-1.12-1.86-1.68 0-1.68 1.93-1.68 3.02v3.27c0 .96.18 1.19.7 1.19h.38v.51h-4.91v-.51zM123.11 11.95c0-3.49.77-4.07 1.7-4.07.93 0 1.7.58 1.7 4.07 0 3.05-.45 4.09-1.7 4.09-1.24 0-1.7-1.05-1.7-4.09m-2.63 0c0 2.75 1.54 4.69 4.33 4.69s4.33-1.94 4.33-4.69c0-2.72-1.54-4.67-4.33-4.67-2.78-.01-4.33 1.94-4.33 4.67M133.18 11.95c0-3.49.77-4.07 1.7-4.07.93 0 1.7.58 1.7 4.07 0 3.05-.46 4.09-1.7 4.09s-1.7-1.05-1.7-4.09m-2.63 0c0 2.75 1.54 4.69 4.33 4.69s4.33-1.94 4.33-4.69c0-2.72-1.54-4.67-4.33-4.67-2.79-.01-4.33 1.94-4.33 4.67M57.01 26.78c-.65 0-.84.54-1.12 1.21l-2.14 5.18c-.26.64-.51 1.32-.72 2h-1.17c-.16-.45-.32-.94-.49-1.39l-2.33-5.84c-.3-.76-.35-1.16-.86-1.16h-.3v-.51h4.8v.51h-.6c-.3 0-.6.07-.6.39 0 .09.06.3.16.6l1.72 4.48h.04l1.74-4.39c.09-.25.14-.44.14-.6 0-.3-.3-.47-.61-.47h-.42v-.51h2.77v.5zM63.05 32.67c0 1.51-.91 1.81-1.37 1.81-.9 0-1.21-.81-1.21-1.6 0-1.56.63-2.51 2.05-2.51.16 0 .3.02.52.07v2.23zm3.53-.03c0 .8 0 1.73-.56 1.73-.28 0-.44-.19-.44-.66v-5.24c0-2.05-1.92-2.48-3.59-2.48-1.24 0-3.53.37-3.53 2.02 0 .79.52 1.31 1.31 1.31.68 0 1.32-.44 1.32-1.18 0-.5-.39-.81-.39-1.01 0-.46.8-.53 1.19-.53.92 0 1.17.65 1.17 1.43v1.85c-.26-.02-.51-.02-.77-.02-1.91 0-4.43.77-4.43 3.03 0 1.61 1.24 2.45 2.75 2.45.96 0 2.05-.3 2.56-1.17.3.81 1.21 1.17 1.92 1.17 2.16 0 2.18-1.54 2.18-2.71h-.69zM67.87 34.55h.59c.53 0 .7-.23.7-1.19v-5.38c0-.97-.17-1.19-.7-1.19h-.59v-.51h1.84c.65 0 1.28-.12 1.88-.29v1.55h.03c.7-.99 1.54-1.55 2.84-1.55 1.72 0 2.57 1.03 2.57 2.49v4.89c0 .96.18 1.19.7 1.19h.39v.51h-4.7v-.51h.39c.52 0 .7-.23.7-1.19v-4.43c0-.86 0-1.86-1.12-1.86-1.68 0-1.68 1.93-1.68 3.03v3.26c0 .96.18 1.19.7 1.19h.38v.51h-4.91v-.52zM90.22 30.42H86.2l2.09-5.01 1.93 5.01zm-.03 4.64h5.61v-.51h-.37c-.68 0-.96-.7-1.18-1.26l-3.24-8.39c-.32-.8-.58-1.61-.81-2.48h-1.56c-.21.75-.48 1.42-.75 2.08l-3.42 8.21c-.58 1.39-.91 1.84-1.8 1.84v.51h3.79v-.51h-.48c-.6-.02-.95-.26-.95-.74 0-.43.21-1.07.46-1.67l.47-1.13h4.49l.46 1.18c.32.81.6 1.5.6 1.82 0 .51-.53.51-1.32.52v.53zM95.98 34.55h.6c.53 0 .7-.23.7-1.19v-5.38c0-.97-.18-1.19-.7-1.19h-.6v-.51h1.84c.65 0 1.28-.12 1.88-.29v1.55h.03c.7-.99 1.54-1.55 2.84-1.55 1.19 0 2.07.44 2.41 1.55.75-1.08 1.47-1.55 2.93-1.55 1.72 0 2.56 1.03 2.56 2.49v4.89c0 .96.18 1.19.7 1.19h.39v.51h-4.7v-.51h.38c.53 0 .7-.23.7-1.19v-4.43c0-.86 0-1.86-1.12-1.86-1.68 0-1.68 1.93-1.68 3.02v3.27c0 .96.18 1.19.7 1.19h.39v.51h-4.7v-.51h.39c.53 0 .7-.23.7-1.19v-4.43c0-.86 0-1.86-1.12-1.86-1.68 0-1.68 1.93-1.68 3.03v3.26c0 .96.18 1.19.7 1.19h.38v.51h-4.91v-.52zM112.59 32.19h.56c.35 1.5 1.18 2.56 2.83 2.56.89 0 1.75-.53 1.75-1.44 0-1.12-.88-1.37-2.56-1.76-1.3-.3-2.58-.74-2.58-2.55 0-2.1 1.53-3.02 3.46-3.01.79 0 1.35.28 1.93.28.48 0 .74-.14.95-.29h.1v2.82h-.56c-.17-1.16-1.12-2.21-2.35-2.21-.86 0-1.73.32-1.73 1.4 0 .89.45 1.02 2.49 1.5 1.56.35 2.75.84 2.75 2.88 0 2.12-1.73 2.98-3.57 2.97-.82 0-1.72-.28-2.47-.28-.35 0-.7.17-.88.29h-.11v-3.16zM126.31 26.78h-1.83v5.66c0 1.05 0 1.83.81 1.83.66 0 .77-.65.79-1.26v-.56h.66v.38c0 1.75-.69 2.52-2.28 2.52-1.81 0-2.5-1.11-2.5-2.29v-6.27h-1.23v-.51c1.74-.11 2.85-1.79 3.23-3.37h.53v3.37h1.83v.5zM130.58 30.19c0-1.73.07-3.59 1.52-3.59 1.3 0 1.3 1.69 1.3 3.59h-2.82zm5.56.51c0-2.73-1.04-4.71-3.97-4.71-2.79 0-4.33 1.95-4.33 4.68 0 2.74 1.55 4.68 4.33 4.68 2.2 0 3.57-1.12 3.8-3.29l-.78-.01c-.04 1.39-.93 2.7-2.46 2.7-2 0-2.15-1.85-2.15-3.62v-.43h5.56zM141.05 33.36c0 .96.17 1.19.7 1.19h.81v.51h-5.34v-.51h.6c.53 0 .7-.23.7-1.19v-5.38c0-.97-.17-1.19-.7-1.19h-.6v-.51h1.84c.65 0 1.28-.12 1.88-.29v1.99h.07c.38-.9 1.18-1.86 2.35-1.86.82 0 1.75.35 1.75 1.48 0 .82-.54 1.26-1.47 1.26-.42 0-1.16-.21-1.16-1.13 0-.33 0-.42-.21-.42-.49 0-1.23 1.14-1.23 3.02v3.03zM148.77 30.42c0-.85 0-3.56 1.33-3.56 1.66 0 1.8 2.43 1.8 3.63 0 1.16-.02 4-1.78 4-1.35-.01-1.35-3.21-1.35-4.07m3.28 4.64h3.69v-.51h-.56c-.46 0-.7-.15-.7-1.21V22h-3.77v.51h.54c.66 0 .7.31.7 1.17v3.74h-.03c-.54-.98-1.36-1.44-2.48-1.44-2.56 0-3.4 2.45-3.4 4.7 0 2.14.91 4.66 3.37 4.66 1.22 0 2.22-.43 2.62-1.55h.03v1.27zM161.94 32.67c0 1.51-.91 1.81-1.36 1.81-.89 0-1.21-.81-1.21-1.6 0-1.56.63-2.51 2.05-2.51.16 0 .3.02.52.07v2.23zm3.53-.03c0 .8 0 1.73-.56 1.73-.28 0-.44-.19-.44-.66v-5.24c0-2.05-1.92-2.48-3.6-2.48-1.24 0-3.53.37-3.53 2.02 0 .79.53 1.31 1.32 1.31.68 0 1.31-.44 1.31-1.18 0-.5-.39-.81-.39-1.01 0-.46.8-.53 1.19-.53.93 0 1.17.65 1.17 1.43v1.85c-.26-.02-.5-.02-.77-.02-1.91 0-4.44.77-4.44 3.03 0 1.61 1.25 2.45 2.75 2.45.97 0 2.05-.3 2.56-1.17.3.81 1.21 1.17 1.91 1.17 2.16 0 2.17-1.54 2.17-2.71h-.65zM166.77 34.55h.59c.53 0 .7-.23.7-1.19v-5.38c0-.97-.17-1.19-.7-1.19h-.59v-.51h1.84c.65 0 1.28-.12 1.88-.29v1.55h.04c.7-.99 1.54-1.55 2.83-1.55 1.2 0 2.08.44 2.41 1.55.75-1.08 1.47-1.55 2.93-1.55 1.72 0 2.57 1.03 2.57 2.49v4.89c0 .96.18 1.19.7 1.19h.39v.51h-4.71v-.51h.39c.53 0 .7-.23.7-1.19v-4.43c0-.86 0-1.86-1.12-1.86-1.68 0-1.68 1.93-1.68 3.02v3.27c0 .96.18 1.19.7 1.19h.38v.51h-4.7v-.51h.38c.53 0 .7-.23.7-1.19v-4.43c0-.86 0-1.86-1.12-1.86-1.68 0-1.68 1.93-1.68 3.03v3.26c0 .96.17 1.19.7 1.19h.38v.51h-4.91v-.52z"
+          />
+          <g>
+            <path
+              class="st0"
+              d="M20.7 9.22a29.3 29.3 0 0 1 14.83 4l4.65-7.95C34.46 1.91 27.81 0 20.7 0 13.6 0 6.95 1.91 1.23 5.27l4.65 7.95c4.36-2.55 9.42-4 14.82-4z"
+            />
+            <path
+              class="st0"
+              d="M25 13.59c-1.89-.02-7.62-.13-14.98 3.27-.94.44-1.6.8-1.76.57-.32-.5 2.02-2.49 4.54-3.95.91-.54 1.43-1.01 1.22-1.41-.3-.59-2.1-.71-7.12 1.86C4.33 15.37 2 17.2.01 19.34l.82.77c.81-.86 1.68-1.65 2.56-2.42.59-.51 3.34-2.57 3.58-1.95.09.25-.08.61-1.06 1.94-.85 1.17-1.41 2.27-1 2.61.4.34.88.15 2.03-.48.85-.47 3.54-1.9 7.79-3.17s5.28-.78 5.38-.48c.13.42-1.83 1.11-2.98 1.68-.97.49-4.37 2.49-6.22 3.98 0 0 1.79 3.07 1.8 3.07 1.91-1.12 9.17-2.96 9.95-1.63.85 1.46-6.88 6.89-6.88 6.89l4.93 8.47s11.21-12.88 9.42-15.7c-1.8-2.81-8.55-2.29-11.21-2.04-.73.06-1.59.22-1.77-.14-.2-.4.03-2.01 9.03-4.14 2-.47 2.78-.72 2.67-1.6-.11-.74-1.96-1.4-3.85-1.41z"
+            />
+          </g>
+
+          <title>Terug naar homepagina</title>
+        </svg>
+         </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li>
+            <a href="#information" class="nav-link"> Informatie </a>
+          </li>
+          <li>
+            <a href="#practical-tips-anchor" class="nav-link"> Praktische tips </a>
+          </li>
+          <li>
+            <a href="#instructions" class="nav-link"> Instructies </a>
+          </li>
+          <li>
+            <a href="#faq" class="nav-link"> Veelgestelde vragen </a>
+          </li>
+          <li>
+            <a href="#"> Aanmelden </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Mobile menu hamburger -->
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </header>
+
+    <!-- Mobile navigation -->
+    <div class="mobile-nav" tabindex>
+      <nav>
+        <ul>
+          <li>
+            <a href="#" class="active nav-link-mobile">Home</a>
+          </li>
+          <li>
+            <a href="#information" class="nav-link-mobile"> Informatie </a>
+          </li>
+          <li>
+            <a href="#practical-tips-anchor" class="nav-link-mobile"> Praktische tips </a>
+          </li>
+          <li>
+            <a href="#instructions" class="nav-link-mobile"> Instructies </a>
+          </li>
+          <li>
+            <a href="#faq" class="nav-link-mobile"> Veelgestelde vragen </a>
+          </li>
+          <li>
+            <a href="#"> Aanmelden </a>
+          </li>
+        </ul>
+      </nav>
+   </div>
+    <main>
+
+      <!-- Banner Section -->
+      <section class="banner">
+        <article class="banner-inner">
+          
+          <!-- Banner titles -->
+          <h1>Het nieuwe MijnHVA</h1>
+          <h2>Een totaal nieuwe online ervaring</h2>
+
+          <!-- Banner buttons -->
+          <div class="banner-btns">
+            <a href="#">Aanmelden</a>
+            <a href="#information">Lees meer</a>
+          </div>
+        </article>
+      </section>
+
+      <!-- Information tabs -->
+      <section id="information" class="information-tabs">
+
+        <!-- Information tabs items -->
+        <ul>
+          <li>
+             <a href="#information" id="mijnhva-link" class="active">
+              <h3>MijnHvA voor studenten</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#information" id="platform-link">
+              <h3>Nieuw platform</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#information" id="productteam-link">
+              <h3>Productteam MijnHvA Student</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#information" id="onderwijs-link">
+              <h3>Goed Georganiseerd Onderwijs</h3>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Information tabs content -->
+        <div class="tab-content">
+
+          <!-- Information tab MijnHvA -->
+          <article id="tab-mijnhva" class="tab-panel active">
+            <div>
+              <h3>MijnHvA voor studenten: hét startpunt voor je studie</h3>
+              <span class="seperator"></span>
+              <p>
+                In MijnHvA voor studenten zie je als student in één oogopslag je rooster, studieresultaten, belangrijke mededelingen en nieuws. En je hebt toegang tot andere informatie en HvA-systemen, zoals Brightspace, SIS en e-mail. Na de introductie van het vernieuwde MijnHvA (op 15 november 2021) gaan we MijnHvA - samen met jullie - doorontwikkelen. Stap voor stap voegen we nieuwe functionaliteiten toe, zodat MijnHvA hét startpunt wordt van alle informatie die jij voor je studie nodig hebt.
+              </p>
+            </div>
+            <div>
+              <video src="assets/images/MijnHvA-demo.mp4" controls></video>
+            </div>
+          </article>
+
+          <!-- Information tab platform -->
+          <article id="tab-platform" class="tab-panel">
+            <div>
+              <h3>Nieuw platform</h3>
+              <span class="seperator"></span>
+              <p>
+                MijnHvA voor studenten is gebouwd op een nieuw platform. De software is toekomstbestendig en biedt de mogelijkheid om sneller en makkelijker dingen te verbeteren. Bovendien is het met deze software niet meer nodig om een aparte app te ontwikkelen. Je kunt MijnHvA ook op je smartphone namelijk gewoon in je browser gebruiken, met alle gemakken die een app ook biedt. Kortom, op elk apparaat dezelfde functies en beleving.
+              </p>
+              </div>
+              <div>
+                <video src="assets/images/MijnHvA-demo.mp4" controls />
+              </div>
+          </article>
+
+          <!-- Information tab product team -->
+          <article id="tab-productteam" class="tab-panel">
+            <div>
+              <h3>Productteam MijnHvA Student</h3>
+              <span class="seperator"></span>
+              <p>
+                Het vernieuwde MijnHvA voor studenten is ontwikkeld door het productteam MijnHvA student. Het onderhoud en beheer van MijnHvA voor studenten is in handen van dit team. Ook gaan zij MijnHvA de komende jaren doorontwikkelen. Help jij mee MijnHvA verbeteren? Deel je suggesties met het productteam MijnHvA student.
+              </p>
+              </div>
+              <div>
+                <video src="assets/images/MijnHvA-demo.mp4" controls />
+              </div>
+          </article>
+
+          <!-- Information tab onderwijs -->
+          <article id="tab-onderwijs" class="tab-panel">
+            <div>
+              <h3>Goed Georganiseerd Onderwijs</h3>
+              <span class="seperator"></span>
+              <p>
+                Het productteam MijnHvA student valt onder het programma Goed Georganiseerd Onderwijs. Dit programma, ook wel bekend als GGO, heeft als hoofddoel om het onderwijs zó te organiseren, dat de juiste groep studenten en docenten op de juiste tijdstippen en plaatsen bij elkaar komen om onderwijsactiviteiten te laten plaatsvinden. Onder het programma GGO vallen verschillende projecten. Meer weten? Kijk op ggo.mijnhva.nl. Je vindt daar alle informatie over het GGO en over de verschillende deelprojecten, waaronder het project MijnHvA voor studenten.
+              </p>
+              </div>
+              <div>
+                <video src="assets/images/MijnHvA-demo.mp4" controls />
+              </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Useful Information Section -->
+      <section id="practical-tips" class="useful-information">
+        <div>
+          <span id="practical-tips-anchor"> &nbsp; </span>
+        <!-- Useful information title -->
+        <h3>Praktische tips</h3>
+
+        <!-- Seperator line -->
+        <span class="seperator"></span>
+
+        <p>
+          Om de overgang naar het vernieuwde MijnHvA zo soepel mogelijk te laten verlopen, staan hier een aantal tips voor jou op een rijtje. Weet je bijvoorbeeld nog niet hoe je je HvA-rooster aan jouw persoonlijke agenda koppelt? Of waar je nu alle informatie vindt? Zoek niet verder, je leest het hier.
+        </p>
+
+        </div>
+
+        <!-- Useful information students -->    
+        <article>
+          <h4>Studenten</h4>
+          <hr />
+
+          <!-- Useful information links -->
+          <ul>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Useful information teachers -->
+        <article>
+          <h4>Docenten</h4> 
+          <hr />
+
+          <!-- Useful information links -->
+          <ul>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+          </ul>
+        </article>
+ 
+        <!-- Useful information supporters -->
+        <article>
+          <h4>Ondersteuners</h4>
+          <hr />
+
+          <!-- Useful information links -->
+          <ul>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+            <li>
+              <a href="#practical-tips">
+                Link
+              </a>
+            </li>
+          </ul>
+        </article> 
+        </section>
+        </div>
+      </section>
+
+      <!-- Instructions Section -->
+      <section id="instructions" class="instructions">
+
+          <!-- Instructions Title -->
+          <h3>Instructies</h3>
+
+          <!-- Seperator line -->
+          <span class="seperator"></span>
+
+        <!-- Instructions -->
+        <div class="instructions-slider">
+
+        <!-- Instruction item -->
+        <article>
+          
+          <!-- Instruction image -->
+          <img src="assets/images/instructions/instruction1.jpg" alt="Foto van aftekenlijst en laptop" /> 
+
+          <!-- Instruction content -->
+          <div class="instruction-content">
+          <h4>Instructie 1</h4>
+          <hr />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac diam erat. Sed finibus nisl ut felis rutrum, ut ornare ipsum facilisis. Donec quis volutpat mauris.</p>
+
+          <!-- Read more btn -->
+          <a href="#instructions">Meer lezen</a>
+          </div>
+        </article>
+
+        <!-- Instruction item -->
+        <article>
+          
+          <!-- Instruction image -->
+          <img src="assets/images/instructions/instruction2.jpg" alt="Foto van man die een krant leest" /> 
+
+          <!-- Instruction content -->
+          <div class="instruction-content">
+          <h4>Instructie 2</h4>
+          <hr />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac diam erat. Sed finibus nisl ut felis rutrum, ut ornare ipsum facilisis. Donec quis volutpat mauris.</p>
+
+          <!-- Read more btn -->
+          <a href="#instructions">Meer lezen</a>  
+          </div>
+        </article>
+
+        <!-- Instruction item -->
+        <article>
+          
+          <!-- Instruction image -->
+          <img src="assets/images/instructions/instruction3.jpg" alt="Foto van een bureau met daarop een laptop" /> 
+
+          <!-- Instruction content -->
+          <div class="instruction-content">
+          <h4>Instructie 3</h4>
+          <hr />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac diam erat. Sed finibus nisl ut felis rutrum, ut ornare ipsum facilisis. Donec quis volutpat mauris.</p>
+
+          <!-- Read more btn -->
+          <a href="#instructions">Meer lezen</a>
+          </div>
+        </article>
+
+        <!-- Instruction item -->
+        <article>
+          
+          <!-- Instruction image -->
+          <img src="assets/images/instructions/instruction4.jpg" alt="Foto van een bord waar een quote op staat: Maak ideeën realiteit" /> 
+
+          <!-- Instruction content -->
+          <div class="instruction-content">
+          <h4>Instructie 4</h4>
+          <hr />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac diam erat. Sed finibus nisl ut felis rutrum, ut ornare ipsum facilisis. Donec quis volutpat mauris.</p>
+          
+          <!-- Read more btn -->
+          <a href="#instructions">Meer lezen</a>
+          </div>
+        </article>    
+
+        <!-- Instruction item -->
+        <article>
+          
+          <!-- Instruction image -->
+          <img src="assets/images/instructions/instruction4.jpg" alt="Foto van een bord waar een quote op staat: Maak ideeën realiteit" /> 
+
+          <!-- Instruction content -->
+          <div class="instruction-content">
+          <h4>Instructie 5</h4>
+          <hr />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac diam erat. Sed finibus nisl ut felis rutrum, ut ornare ipsum facilisis. Donec quis volutpat mauris.</p>
+          
+          <!-- Read more btn -->
+          <a href="#instructions">Meer lezen</a>
+          </div>
+        </article>  
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section id="faq" class="faq">
+
+        <!-- FAQ Title -->
+        <h3>Veelgestelde vragen</h3>
+
+        <!-- Seperator -->
+        <span class="seperator"></span>
+
+        <!-- FAQ Questions -->
+        <div class="faq-questions">
+
+          <!-- FAQ Question Category -->
+          <article>
+
+            <!-- Category title -->
+            <h4>MijnHvA gebruiken / Problemen met MijnHvA</h4>
+
+            <hr />
+
+            <ul class="faq-questions-list">
+              <li class="faq-question">
+                Inloggen in MijnHvA lukt niet. Wat kan ik doen?  
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                  <p>
+                  Probeer MijnHvA te openen in een andere browser (Edge, Chrome,
+                  Safari, Firefox, …).
+                  </p>
+                  </li>
+                  <li>
+                    <p>
+                      Kijk op <a href="https://services.hva.nl/">services.hva.nl</a> en
+                    check of er misschien problemen zijn met HvA-systemen.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                    Controleer of je in een ander HvA-systeem wel met deze inloggegevens
+                    kunt Inloggen.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Ik zie geen rooster, studieresultaten, nieuws of mededelingen. Wat kan ik doen?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Probeer het eerst in een andere browser (Firefox, Chrome, Safari). Zie
+                    je dan nog geen gegevens? Kijk dan op
+                    <a href="https://services.hva.nl/">services.hva.nl</a> en check of er
+                    problemen zijn met HvA-systemen. Zijn er geen problemen? Maak dan
+                    melding van je probleem via dit
+                    <a href="https://hva-ac.topdesk.net/tas/public/xfg/mijnhvaform">formulier.</a>
+                    </p>
+                  </li>
+                  </ul>
+                </li>
+
+              <li class="faq-question">
+                Ik zie roostergegevens of studieresultaten die niet kloppen. Hoe kan ik die laten wijzigen?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Je kunt dit doorgeven via het <a href="https://hva-ac.topdesk.net/tas/public/xfg/dsp">digitaal servicepunt.</a>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Is er ook een app voor MijnHvA?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Nee, er is geen aparte app. Het vernieuwde MijnHvA is een zogenaamde
+                    progressive webapp. Je opent MijnHvA gewoon in je browser, waarna het
+                    eruitziet als een app. Wel kun je MijnHvA toevoegen aan het
+                    beginscherm van je telefoon. <a
+                    href="https://icthva.sharepoint.com/:v:/r/sites/over-mijnhva-voor-studenten/Gedeelde%20documenten/How-to---MijnHvA-op-je-telefoon-NL.mp4">Bekijk de video.</a> Je kunt MijnHvA dan net als een app opstarten. De huidige MijnHvApp
+                    vervalt vanaf 1 januari 2022.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Waarom kan ik de MijnHvApp niet meer gebruiken?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Het vernieuwde MijnHvA draait op een nieuw platform, waardoor een
+                    aparte app niet langer nodig is. Daarom komt de MijnHvApp vanaf 1
+                    januari te vervallen. Je kunt MijnHvA op je telefoon gewoon in
+                    je browser openen, met alle gemakken die een app ook biedt. En als je
+                    wilt kun je MijnHvA toevoegen aan het beginscherm van je
+                    telefoon. <a href="https://icthva.sharepoint.com/:v:/r/sites/over-mijnhva-voor-studenten/Gedeelde%20documenten/How-to---MijnHvA-op-je-telefoon-NL.mp4">Bekijk de video</a> Je kunt MijnHvA dan net als een
+                    app opstarten.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Ik heb in MijnHvA geen directe linkjes meer naar Microsoft 365-apps. Waar vind ik ze nu?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    De Microsoft 365-apps zijn inderdaad niet meer direct te benaderen
+                    vanuit MijnHvA. Ga in MijnHvA vanuit het menu naar 'Opleidingen'. Daar
+                    vind je de linkjes naar de Microsoft 365-apps.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Waar kan ik terecht met vragen of feedback over MijnHvA
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Heb je hulp nodig bij het gebruik van MijnHvA? Heb je een vraag die
+                    hier niet tussen staat? Of wil je feedback of verbetersuggesties
+                    doorgeven? Laat het ons weten via <a href="https://hva-ac.topdesk.net/tas/public/xfg/mijnhvaform">dit formulier.</a>Na de introductie van
+                    het vernieuwde MijnHvA (op 15 november 2021) gaan we MijnHvA - samen
+                    met jullie - doorontwikkelen. Stap voor stap voegen we nieuwe
+                    functionaliteiten toe, zodat MijnHvA hét startpunt wordt van alle
+                    informatie die jij voor je studie nodig hebt.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+          <!-- FAQ Question Category -->
+          <article>
+
+            <!-- Category title -->
+            <h4>Algemene vragen over MijnHvA</h4>
+
+            <hr />
+
+            <ul class="faq-questions-list">
+              <li class="faq-question">
+                Wat is het vernieuwde MijnHvA voor studenten?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Vanaf 15 november zie je in MijnHvA in één oogopslag je rooster,
+                    studieresultaten, belangrijke mededelingen en nieuws. En je hebt
+                    toegang tot andere informatie en HvA-systemen, zoals Brightspace, SIS
+                    en e-mail. Het vernieuwde MijnHvA is gebruiksvriendelijker en het ziet
+                    er aantrekkelijker uit. Daarna gaan we samen met jullie stap voor stap
+                    nieuwe functionaliteiten toevoegen. Zo wordt MijnHvA hét startpunt
+                    voor alle informatie die je voor je studie nodig het. Heb je
+                    suggesties hoe we MijnHvA verder kunnen verbeteren? Laat het weten via
+                    het <a href="https://hva-ac.topdesk.net/tas/public/xfg/mijnhvaform">feedbackformulier</a>.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Wat is er nieuw aan het vernieuwde MijnHvA?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Het vernieuwde MijnHvA is gebruiksvriendelijker. Je vindt er sneller
+                    de informatie waarnaar je op zoek bent. En je kunt het vernieuwde
+                    MijnHvA op alle devices gebruiken. Je hebt voor je telefoon dus geen
+                   aparte app meer nodig. Ook ziet MijnHvA er aantrekkelijker uit.
+                   </p>
+                  </li>
+                  <li>
+                    <p>
+                    Na de introductie van het vernieuwde MijnHvA (op 15 november 2021)
+                    gaan we MijnHvA - samen met jullie - doorontwikkelen. Stap voor stap
+                    voegen we nieuwe functionaliteiten toe, zodat MijnHvA hét startpunt
+                    wordt van alle informatie die jij voor je studie nodig hebt.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Waarom is er een vernieuwd MijnHvA?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Momenteel staat alle informatie die je nodig hebt voor je studie op
+                    veel verschillende plekken. Het is soms lastig om de juiste informatie
+                    te vinden. In het vernieuwde MijnHvA vind je nu al in één oogopslag de
+                    belangrijkste informatie, zoals je rooster en studieresultaten.
+                    Daarnaast biedt het snelle toegang tot informatie en HvA-systemen die
+                    je nodig voor je studie. De komende jaren gaan we samen met jullie
+                    nieuwe functionaliteiten toevoegen, zodat alle informatie steeds meer
+                    vanaf één centrale plek te vinden is. Zo wordt MijnHvA hét startpunt
+                    voor alle informatie die je voor je studie nodig hebt.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                    Ook is het vernieuwde MijnHvA gebouwd op een nieuw platform. Deze
+                    nieuwe software is toekomstbestendig en biedt de mogelijkheid om
+                    sneller en makkelijker dingen te verbeteren. Bovendien is het met deze
+                    software niet meer nodig om een aparte app te ontwikkelen. Je kunt
+                    MijnHvA op je telefoon namelijk gewoon in je browser gebruiken, met
+                    alle gemakken die een app ook biedt. En als je wilt, kun je MijnHvA
+                    toevoegen aan het beginscherm van je telefoon. Bekijk de video. Je
+                    kunt MijnHvA dan net als een app opstarten.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+
+          <!-- FAQ Question Category -->
+          <article>
+
+            <!-- Category title -->
+            <h4>Vragen voor docenten en ondersteuners</h4>
+
+            <hr />
+
+            <ul class="faq-questions-list">
+              <li class="faq-question">
+                Als ik in MijnHvA kijk, zie ik iets anders dan mijn studenten. Kan ik ook in MijnHvA voor studenten kijken?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Klopt, als je als HvA-medewerker naar MijnHvA gaat, dan kom je terecht
+                    in MijnHvA voor medewerkers. Dit is een andere omgeving dan MijnHvA
+                    voor studenten. Wil je een kijkje nemen in het vernieuwde MijnHvA voor
+                    studenten? Bekijk dan de <a href="https://icthva.sharepoint.com/:v:/r/sites/over-mijnhva-voor-studenten/Gedeelde%20documenten/MijnHvA-demo.mp4">demovideo over MijnHvA voor studenten.</a>
+                    </p>  
+                 </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Wat doe ik als een student vragen heeft over MijnHvA?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Komt een student ergens niet uit? Of wil een student feedback geven?
+                    Vraag hem/haar dan om via MijnHvA of via deze website
+                    het <a href="https://hva-ac.topdesk.net/tas/public/xfg/mijnhvaform">feedbackformulier</a>  in te vullen.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Waarom is MijnHvA zo handig voor studenten?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Op de startpagina van MijnHvA zien studenten in één oogopslag hun
+                    actuele rooster en laatste studieresultaten. Daarnaast zien ze
+                    belangrijke mededelingen en nieuwsberichten, die vanuit de opleiding
+                    of HvA-breed worden gecommuniceerd. Verder kunnen ze vanuit
+                    MijnHvA doorklikken naar andere HvA-systemen of informatiebronnen,
+                    zoals Brightspace, SIS en e-mail. Zo kunnen studenten alle informatie
+                    die studenten ze nodig hebben voor hun studie snel een gemakkelijk
+                    vinden. Tip: is een student op zoek naar informatie voor of over zijn
+                    studie? Verwijs hem/haar dan in eerste instantie naar MijnHvA.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Waarom is er een vernieuwd MijnHvA?              
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Momenteel staat alle informatie die studenten voor hun studie nodig
+                    hebben op veel verschillende plekken. Het is soms lastig om de juiste
+                    informatie te vinden. In het vernieuwde MijnHvA vinden studenten nu al
+                    in één oogopslag de belangrijkste informatie, zoals het rooster en
+                    studieresultaten. Daarnaast biedt het snelle toegang tot informatie en
+                    HvA-systemen die studenten nodig hebben voor hun studie. De komende
+                    jaren gaan we samen met studenten nieuwe functionaliteiten toevoegen,
+                    zodat alle informatie steeds meer vanaf één centrale plek te vinden
+                    is. Zo wordt MijnHvA hét startpunt voor alle informatie die studenten
+                    voor hun studie nodig hebben.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                    Ook is het vernieuwde MijnHvA gebouwd op een nieuw platform. Deze
+                    nieuwe software is toekomstbestendig en biedt de mogelijkheid om
+                    sneller en makkelijker dingen te verbeteren. Bovendien is het met deze
+                    software niet meer nodig om een aparte app te ontwikkelen. Studenten
+                    kunnen MijnHvA op hun telefoon namelijk gewoon in een browser
+                    gebruiken, met alle gemakken die een app ook biedt. En als studenten
+                    dat willen, dan kunnen zij MijnHvA toevoegen aan het beginscherm van
+                    hun telefoon. <a href="https://icthva.sharepoint.com/:v:/r/sites/over-mijnhva-voor-studenten/Gedeelde-documenten/How-to---MijnHvA-op-je-telefoon-NL.mp4">Bekijk de video.</a>Je kunt MijnHvA dan net als een
+                    app opstarten.
+                    </p>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="faq-question">
+                Komt er ook een nieuw MijnHvA voor medewerkers?
+              </li>
+
+              <li class="accordion-panel">
+                <ul>
+                  <li>
+                    <p>
+                    Op termijn gaat ook MijnHvA voor medewerkers vernieuwd worden. Het is
+                    nog niet bekend wanneer dit op de planning staat en wie het MijnHvA
+                    voor medewerkers gaat vernieuwen. 
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+
+      <!-- Footer -->
+      <footer>
+
+        <!-- Footer grid -->
+        <div class="footer-grid">
+
+        <!-- Footer column onderwijs -->
+        <section class="footer-column">
+          <h3>Onderwijs</h3>
+          <span class="seperator"></span>
+          <ul>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+          </ul>
+        </section>
+
+        <!-- Footer column samenwerking -->
+        <section class="footer-column">
+          <h3>Samenwerking</h3>
+          <span class="seperator"></span>
+          <ul>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+          </ul>
+        </section>
+
+        <!-- Footer column praktisch -->
+        <section class="footer-column">
+          <h3>Praktisch</h3>
+          <span class="seperator"></span>
+          <ul>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+            <li>
+              Link
+            </li>
+          </ul>
+        </section> 
+
+        <!-- Footer column socials -->
+        <section class="footer-column">
+          <h3>Volg ons</h3>
+          <span class="seperator"></span>
+
+          <div class="social-icons">
+            <a href="#facebook-link"><img src="assets/images/facebook.png" alt="Facebook logo link"></a>
+            <a href="#instagram-link"><img src="assets/images/instagram.png" alt="Instagram logo link"></a>
+            <a href="#linkedin-link"><img src="assets/images/linkedin.png" alt="Linkedin logo link"></a>
+            <a href="#twitter-link"><img src="assets/images/twitter.png" alt="Twitter logo link"></a>
+          </div>
+        </section>
+        </div>
+      </footer>
+
+      <div class="footer-bottom-bar">
+        <p>© MijnHvA 2021</p>
+      </div>
+    </aside>
+
+  </body>
+</html>
