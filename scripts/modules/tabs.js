@@ -11,7 +11,6 @@ function tabHandler() {
 
 function tabContentHandler(i) {
   currentTab = tabContent[i];
-  console.log(i);
   for (let j = 0; j < tabContent.length; j++) {
     if (tabContent != currentTab) {
       tabContent[j].classList.remove("active");

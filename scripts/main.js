@@ -8,6 +8,8 @@ import {
 } from "./modules/drag.js";
 import { mobileMenu } from "./modules/navigation.js";
 import { tabHandler, tabContentHandler } from "./modules/tabs.js";
+import * as api  from "./modules/api.js";
+
 
 // 🍉 Variables
 const hamburger = document.querySelector(".hamburger");
