@@ -1,22 +1,17 @@
 // 🚀 Imports
 import toggleQuestion from "./modules/faq.js";
-import { startDragging, stopDragging, dragHandler, instructionSlider } from "./modules/drag.js";
+import {
+  startDragging,
+  stopDragging,
+  dragHandler,
+  instructionSlider,
+} from "./modules/drag.js";
 import { mobileMenu } from "./modules/navigation.js";
 
-// Variables
-const tabLinkMijnHvA = document.querySelector("#mijnhva-link");
-const tabLinkPlatform = document.querySelector("#platform-link");
-const tabLinkProductTeam = document.querySelector("#productteam-link");
-const tabLinkOnderwijs = document.querySelector("#onderwijs-link");
-
-// Define info tabs
-const infoTabMijnHvA = document.querySelector("#tab-mijnhva");
-const infoTabPlatform = document.querySelector("#tab-platform");
-const infoTabProductTeam = document.querySelector("#tab-productteam");
-const infoTabOnderwijs = document.querySelector("#tab-onderwijs");
-
+// 🍉 Variables
 const hamburger = document.querySelector(".hamburger");
 
+// 📚 Story
 // Toggle mobileMenu
 hamburger.addEventListener("click", mobileMenu);
 
@@ -33,26 +28,28 @@ for (let i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", toggleQuestion);
 }
 
-const tabs = document.querySelectorAll(".tabs li a")
-const tabContent = document.querySelectorAll(".tab-panel")
-let currentTab = tabContent[0]
+const tabs = document.querySelectorAll(".tabs li a");
+const tabContent = document.querySelectorAll(".tab-panel");
+let currentTab = tabContent[0];
 
-tabs.forEach(tab=>{
-  tab.addEventListener("click", function() {
+tabs.forEach((tab) => {
+  tab.addEventListener("click", function () {
     for (let i = 0; i < tabs.length; i++) {
-       tabs[i].classList.remove("active") }
- 
-    this.classList.add("active") })
-})
+      tabs[i].classList.remove("active");
+    }
+
+    this.classList.add("active");
+  });
+});
 
 for (let i = 0; i < tabs.length; i++) {
-  tabs[i].addEventListener("click", function() {
-    currentTab = tabContent[i]
+  tabs[i].addEventListener("click", function () {
+    currentTab = tabContent[i];
     for (let j = 0; j < tabContent.length; j++) {
-      if(tabContent != currentTab) {
-        tabContent[j].classList.remove("active")
+      if (tabContent != currentTab) {
+        tabContent[j].classList.remove("active");
       }
     }
-    currentTab.classList.add("active")
-  })
+    currentTab.classList.add("active");
+  });
 }
