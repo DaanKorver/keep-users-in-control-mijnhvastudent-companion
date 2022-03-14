@@ -307,7 +307,7 @@ cursor: pointer;
 }
 
 /* Specific item */
-.information-tabs ul li a {
+.information-tabs ul li {
     border: 1px solid var(--secondary-bg);
     padding: 15px;
     display: flex;
@@ -319,7 +319,7 @@ cursor: pointer;
     background: var(--secondary-bg);
 }
 
-.information-tabs ul li a.active {
+.information-tabs ul li.active {
     background: var(--secondary-bg);
     color: var(--primary-color);
     border-color: var(--secondary-bg);
@@ -710,7 +710,7 @@ footer {
 
     .information-tabs ul {
         flex-direction: row;
-        justify-content: space-between;
+        gap: 1em;
     }
 
     .tab-panel {

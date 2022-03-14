@@ -7,6 +7,7 @@ import {
   instructionSlider,
 } from "./modules/drag.js";
 import { mobileMenu } from "./modules/navigation.js";
+import { tabHandler, tabContentHandler } from "./modules/tabs.js";
 
 // 🍉 Variables
 const hamburger = document.querySelector(".hamburger");
@@ -28,28 +29,12 @@ for (let i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", toggleQuestion);
 }
 
-const tabs = document.querySelectorAll(".tabs li a");
-const tabContent = document.querySelectorAll(".tab-panel");
-let currentTab = tabContent[0];
+const tabs = document.querySelectorAll(".tabs li");
 
 tabs.forEach((tab) => {
-  tab.addEventListener("click", function () {
-    for (let i = 0; i < tabs.length; i++) {
-      tabs[i].classList.remove("active");
-    }
-
-    this.classList.add("active");
-  });
+  tab.addEventListener("click", tabHandler);
 });
 
 for (let i = 0; i < tabs.length; i++) {
-  tabs[i].addEventListener("click", function () {
-    currentTab = tabContent[i];
-    for (let j = 0; j < tabContent.length; j++) {
-      if (tabContent != currentTab) {
-        tabContent[j].classList.remove("active");
-      }
-    }
-    currentTab.classList.add("active");
-  });
+  tabs[i].addEventListener("click", ()=> tabContentHandler(i));
 }
