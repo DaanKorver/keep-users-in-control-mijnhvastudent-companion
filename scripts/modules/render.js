@@ -1,3 +1,3 @@
 export default function render(element, html) {
-  element.insertAdjecentHTML("beforeend", html)
+  element.insertAdjacentHTML("beforeend", html)
 }

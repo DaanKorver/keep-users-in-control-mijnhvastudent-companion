@@ -7,7 +7,7 @@ import {
   instructionSlider,
 } from "./modules/drag.js";
 import { mobileMenu } from "./modules/navigation.js";
-import { tabHandler, tabContentHandler } from "./modules/tabs.js";
+import { fillTabs } from "./modules/tabs.js";
 import * as api  from "./modules/api.js";
 
 
@@ -26,12 +26,7 @@ for (let i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", toggleQuestion);
 }
 
-const tabs = document.querySelectorAll(".tabs li");
 
-tabs.forEach((tab) => {
-  tab.addEventListener("click", tabHandler);
-});
 
-for (let i = 0; i < tabs.length; i++) {
-  tabs[i].addEventListener("click", () => tabContentHandler(i));
-}
+fillTabs()
+

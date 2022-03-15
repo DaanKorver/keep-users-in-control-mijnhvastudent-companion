@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:8000/v1";
+const baseUrl = "https://mijnhva.api.fdnd.nl/v1";
 
 async function getAllPages() {
   return await fetchApi(`${baseUrl}/page`);
