@@ -7,7 +7,7 @@ import {
   instructionSlider,
 } from "./modules/drag.js";
 import { mobileMenu } from "./modules/navigation.js";
-import { initTabs } from "./modules/fetch/index.js"
+import { initTabs, fillTips } from "./modules/fetch/index.js"
 import * as api  from "./modules/api.js";
 
 
@@ -26,6 +26,6 @@ for (let i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", toggleQuestion);
 }
 
-Promise.all([initTabs]).then(()=>{
+Promise.all([initTabs, fillTips]).then(()=>{
   console.log('loaded');
 })
