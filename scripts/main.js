@@ -7,7 +7,7 @@ import {
   instructionSlider,
 } from "./modules/drag.js";
 import { mobileMenu } from "./modules/navigation.js";
-import { initTabs, initFaq } from "./modules/fetch/index.js";
+import { initTabs, initFaq, fillTips } from "./modules/fetch/index.js";
 import * as api from "./modules/api.js";
 
 // 🍉 Variables
@@ -25,6 +25,6 @@ for (let i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", toggleQuestion);
 }
 
-Promise.all([initTabs, initFaq]).then(() => {
+Promise.all([initTabs, initFaq, fillTips]).then(() => {
   console.log("loaded");
 });
