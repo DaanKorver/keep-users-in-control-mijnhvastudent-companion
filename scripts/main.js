@@ -1,5 +1,5 @@
 // 🚀 Imports
-import toggleQuestion from "./modules/faq.js";
+import toggleQuestion from "./modules/fetch/faq.js";
 import {
   startDragging,
   stopDragging,
@@ -7,9 +7,8 @@ import {
   instructionSlider,
 } from "./modules/drag.js";
 import { mobileMenu } from "./modules/navigation.js";
-import { initTabs } from "./modules/fetch/index.js"
-import * as api  from "./modules/api.js";
-
+import { initTabs, initFaq } from "./modules/fetch/index.js";
+import * as api from "./modules/api.js";
 
 // 🍉 Variables
 const hamburger = document.querySelector(".hamburger");
@@ -26,6 +25,6 @@ for (let i = 0; i < accordion.length; i++) {
   accordion[i].addEventListener("click", toggleQuestion);
 }
 
-Promise.all([initTabs]).then(()=>{
-  console.log('loaded');
-})
+Promise.all([initTabs, initFaq]).then(() => {
+  console.log("loaded");
+});
