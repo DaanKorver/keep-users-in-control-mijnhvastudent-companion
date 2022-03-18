@@ -22,22 +22,27 @@ async function initFaq() {
     categories.forEach((cat) => {
       const title = cat[1][0].title;
       const questions = cat[1];
-      const questionHtml = questions.reduce((prev, curr) => {
-        const questionHtml =
-          prev +
-          `
-             <details>
-        <summary class="faq-question">${curr.question}
-          <figure class="summary-chevron">
-            <img src="../assets/images/chevron-right.svg"></img>
-          </figure>
-        </summary>
-        <p> ${curr.answer} </p>
-      </details>
-        `;
-        return questionHtml;
-      });
-      console.log(questionHtml);
+      console.log(questions);
+      let html = ''
+      questions.forEach(question=>{
+        html += `
+          <details>
+            <summary class="faq-question">${question.question}
+              <figure class="summary-chevron">
+                <img src="../assets/images/chevron-right.svg"></img>
+              </figure>
+            </summary>
+            <p> ${question.answer} </p>
+          </details>
+        `
+      })
+      const faqCategory = `
+        <div>
+          <h3>${title}</h3>
+          ${html}
+       </div>
+      `
+      render(faqContainer, faqCategory)
     });
     resolve();
   });
