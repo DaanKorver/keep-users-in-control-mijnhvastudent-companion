@@ -73,6 +73,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  pointer-events: none;
   opacity: 0;
 }
 
@@ -85,6 +86,70 @@ a {
 .error p {
   padding-top: 0.7em;
   max-width: 30em;
+}
+
+.error.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: none;
+  opacity: 1;
+  transition: .3s opacity;
+}
+
+.preloader img {
+  width: 15em;
+}
+
+.preloader div {
+  height: 2em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.preloader span {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background-color: var(--primary-bg);
+  animation: dotFlashing .8s ease-in-out infinite alternate forwards;
+  animation-delay: var(--delay);
+}
+
+.preloader.hide {
+  opacity: 0;
+}
+
+@keyframes dotFlashing {
+  0% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: .5;
+  }
 }
 
 /*--------------------------------------------------------------

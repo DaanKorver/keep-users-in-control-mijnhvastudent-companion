@@ -8,10 +8,12 @@ import {
 } from "./modules/drag.js";
 import { mobileMenu } from "./modules/navigation.js";
 import * as fetches from "./modules/fetch/index.js";
+import { hidePreloader } from "./modules/preloader.js"
 
 // 🍉 Variables
 const hamburger = document.querySelector(".hamburger");
 const accordion = document.getElementsByClassName("faq-question");
+const error = document.querySelector(".error");
 
 // 📚 Story
 hamburger.addEventListener("click", mobileMenu);
@@ -26,4 +28,7 @@ for (let i = 0; i < accordion.length; i++) {
 
 Promise.all(Object.values(fetches)).then(() => {
   console.log("%cMijnHvA: " + "%cLoaded all sections", 'font-size: 1.5rem; color: #25167a; background: white;', 'font-size: 1.5rem; color: lime; background: white;');
-});
+  hidePreloader()
+}).catch(err=>{
+  error.classList.add('visible')
+})
