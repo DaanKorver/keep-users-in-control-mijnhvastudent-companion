@@ -1,7 +1,7 @@
 import { hidePreloader } from "../modules/preloader.js";
 import { error } from "../modules/error.js";
 
-const baseUrl = "https://mijnhva.api.fdnd.nl/v1.";
+const baseUrl = "https://mijnhva.api.fdnd.nl/v1";
 
 async function getAllPages() {
   return await fetchApi(`${baseUrl}/page`);
