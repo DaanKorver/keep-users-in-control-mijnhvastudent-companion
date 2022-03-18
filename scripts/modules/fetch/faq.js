@@ -38,7 +38,7 @@ async function initFaq() {
           <details>
             <summary class="faq-question">${question.question}
               <figure class="summary-chevron">
-                <img src="../assets/images/chevron-right.svg"></img>
+                <img src="../assets/images/chevron-right.svg" alt="Dropdown Arrow"></img>
               </figure>
             </summary>
             <p> ${question.answer} </p>
