@@ -1,7 +1,7 @@
 import render from "../render.js";
 import { getFaq } from "../api.js";
 
-const faqContainer = document.querySelector(".faq-questions");
+const faqContainer = document.querySelector(".faq-section");
 
 const groupBy = (items, key) =>
   items.reduce(
@@ -33,15 +33,16 @@ async function initFaq() {
             </summary>
             <p> ${question.answer} </p>
           </details>
-        `
-      })
+        `;
+      });
       const faqCategory = `
-        <div>
+        <div class="faq-questions">
           <h3>${title}</h3>
+          <hr>
           ${html}
        </div>
-      `
-      render(faqContainer, faqCategory)
+      `;
+      render(faqContainer, faqCategory);
     });
     resolve();
   });

@@ -495,9 +495,16 @@ h2 {
 /*--------------------------------------------------------------
 # FAQ
 --------------------------------------------------------------*/
+
 .faq {
-  background: #f2f1f8;
   padding: 1rem 1rem;
+  margin: 0;
+  background-color: #f2f1f8;
+}
+
+.faq-section {
+  margin: 0;
+  padding: 0;
 }
 
 .faq-questions {
@@ -564,6 +571,16 @@ details p {
 
 details[open] > summary ~ * {
   animation: open 1s ease;
+}
+
+.faq-container {
+  margin: 2em 0;
+}
+
+.faq-questions hr {
+  border: 0;
+  height: 1px;
+  background: var(--secondary-bg);
 }
 
 @keyframes open {
