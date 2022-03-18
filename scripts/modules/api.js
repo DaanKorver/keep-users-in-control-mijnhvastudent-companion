@@ -4,6 +4,11 @@ async function getAllPages() {
   return await fetchApi(`${baseUrl}/page`);
 }
 
+/**
+ * Gets pages based of slug
+ * @param {*} slug The page slug
+ * @returns {Promise} response from the api endpoint
+ */
 async function getPage(slug) {
   return await fetchApi(`${baseUrl}/page/${slug}`);
 }
@@ -20,6 +25,10 @@ async function getSection() {
   return await fetchApi(`${baseUrl}/section`);
 }
 
+/**
+ * Wraps the fetch api and returns the reponse body parse through json
+ * @returns {Promise} the response of the api endpoint
+ */
 async function fetchApi(endpoint) {
   try {
     const res = await fetch(endpoint);

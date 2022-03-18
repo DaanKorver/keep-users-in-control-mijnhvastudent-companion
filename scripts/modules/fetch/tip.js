@@ -3,6 +3,10 @@ import { getTip } from "../api.js";
 
 const slider = document.querySelector(".instructions-slider")
 
+/**
+ * Renders the tips
+ * @returns {Promise}
+ */
 async function fillTips() {
   return new Promise(async (resolve)=>{
     const tips = await getTip()

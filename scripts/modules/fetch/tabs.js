@@ -4,6 +4,10 @@ import { getPage } from "../api.js"
 const tabs = document.querySelector(".tabs")
 const tabContentContainer = document.querySelector(".tab-content")
 
+/**
+ * Setups the tab section and adds a eventListener
+ * @returns {Promise}
+ */
 async function initTabs() {
   return new Promise(async (resolve)=>{
     const tabContentData = await getPage('over')

@@ -13,6 +13,9 @@ for (let i = 0; i < headerBtns.length; i++) {
   });
 }
 
+/**
+ * Toggles the mobile nav class "open"
+ */
 function mobileMenu() {
   mobileNav.classList.toggle("open");
 }

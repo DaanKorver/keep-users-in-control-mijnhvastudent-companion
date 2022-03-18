@@ -3,6 +3,12 @@ import { getFaq } from "../api.js";
 
 const faqContainer = document.querySelector(".faq-section");
 
+/**
+ * Groups an object
+ * @param {*} items The object that needs to be grouped
+ * @param {*} key The key value that the object has to be grouped by
+ * @returns A grouped by array
+ */
 const groupBy = (items, key) =>
   items.reduce(
     (result, item) => ({
@@ -12,6 +18,10 @@ const groupBy = (items, key) =>
     {}
   );
 
+/**
+ * Setups the FAQ section
+ * @returns {Promise}
+ */
 async function initFaq() {
   return new Promise(async (resolve) => {
     const faqContent = await getFaq();
