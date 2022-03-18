@@ -1,4 +1,5 @@
 const baseUrl = "https://mijnhva.api.fdnd.nl/v1";
+const error = document.querySelector(".error");
 
 async function getAllPages() {
   return await fetchApi(`${baseUrl}/page`);
@@ -35,15 +36,9 @@ async function fetchApi(endpoint) {
     const json = await res.json();
     return json;
   } catch (err) {
-    console.log(err);
+    error.style.opacity = 1;
     return err;
   }
 }
 
-export { 
-  getAllPages,
-  getPage,
-  getFaq,
-  getTip,
-  getSection
-}
+export { getAllPages, getPage, getFaq, getTip, getSection };
