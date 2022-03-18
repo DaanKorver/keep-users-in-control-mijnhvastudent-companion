@@ -22,7 +22,6 @@ async function initFaq() {
     categories.forEach((cat) => {
       const title = cat[1][0].title;
       const questions = cat[1];
-      console.log(questions);
       let html = ''
       questions.forEach(question=>{
         html += `
