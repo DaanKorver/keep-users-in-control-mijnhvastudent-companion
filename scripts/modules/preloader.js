@@ -2,7 +2,7 @@ const preloader = document.querySelector(".preloader");
 
 function hidePreloader() {
   setTimeout(() => {
-    preloader.classList.add("visible");
+    preloader.classList.add("hide");
   }, 800);
 }
 
