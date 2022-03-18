@@ -13,7 +13,6 @@ import { hidePreloader } from "./modules/preloader.js"
 // 🍉 Variables
 const hamburger = document.querySelector(".hamburger");
 const accordion = document.getElementsByClassName("faq-question");
-const error = document.querySelector(".error");
 
 // 📚 Story
 hamburger.addEventListener("click", mobileMenu);
@@ -30,5 +29,5 @@ Promise.all(Object.values(fetches)).then(() => {
   console.log("%cMijnHvA: " + "%cLoaded all sections", 'font-size: 1.5rem; color: #25167a; background: white;', 'font-size: 1.5rem; color: lime; background: white;');
   hidePreloader()
 }).catch(err=>{
-  error.classList.add('visible')
+  console.log(err);
 })

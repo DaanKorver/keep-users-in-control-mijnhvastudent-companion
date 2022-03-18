@@ -75,6 +75,7 @@ a {
   text-align: center;
   pointer-events: none;
   opacity: 0;
+  transition: 0.3s opacity;
 }
 
 .error h2 {
@@ -112,7 +113,7 @@ a {
   text-align: center;
   pointer-events: none;
   opacity: 1;
-  transition: .3s opacity;
+  transition: 0.3s opacity;
 }
 
 .preloader img {
@@ -134,7 +135,7 @@ a {
   height: 1em;
   border-radius: 50%;
   background-color: var(--primary-bg);
-  animation: dotFlashing .8s ease-in-out infinite alternate forwards;
+  animation: dotFlashing 0.8s ease-in-out infinite alternate forwards;
   animation-delay: var(--delay);
 }
 
@@ -148,7 +149,7 @@ a {
   }
   50%,
   100% {
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 

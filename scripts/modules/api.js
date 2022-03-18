@@ -1,4 +1,7 @@
-const baseUrl = "https://mijnhva.api.fdnd.nl/v1";
+import { hidePreloader } from "../modules/preloader.js";
+import { error } from "../modules/error.js";
+
+const baseUrl = "https://mijnhva.api.fdnd.nl/v1.";
 
 async function getAllPages() {
   return await fetchApi(`${baseUrl}/page`);
@@ -35,6 +38,8 @@ async function fetchApi(endpoint) {
     const json = await res.json();
     return json;
   } catch (err) {
+    hidePreloader();
+    error();
     console.log(err);
   }
 }
