@@ -23,7 +23,7 @@ async function fillTips() {
         <hr />
         <p>${tip.body.substring(0,150)}...</p>
   
-        <a href="#instructions">Meer lezen</a>
+        <a href="detail.html?id=${tip.tip_id}">Meer lezen</a>
         </div>
       </article>
     `

@@ -884,7 +884,7 @@ footer {
 /*--------------------------------------------------------------
   # Main tip
   --------------------------------------------------------------*/
-main {
+.tip-container {
   padding: 1em;
   padding-top: 5em;
   display: flex;
@@ -893,15 +893,15 @@ main {
   flex-direction: column;
 }
 
-main > article {
+.tip-container > article {
   max-width: 30em;
 }
 
-main > article h1 {
+.tip-container > article h1 {
   color: var(--primary-bg);
   margin-bottom: .5em;
 }
 
-main > article p {
+.tip-container > article p {
   margin-bottom: 1em;
 }
