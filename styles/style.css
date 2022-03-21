@@ -880,3 +880,28 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+/*--------------------------------------------------------------
+  # Main tip
+  --------------------------------------------------------------*/
+main {
+  padding: 1em;
+  padding-top: 5em;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+}
+
+main > article {
+  max-width: 30em;
+}
+
+main > article h1 {
+  color: var(--primary-bg);
+  margin-bottom: .5em;
+}
+
+main > article p {
+  margin-bottom: 1em;
+}
