@@ -232,7 +232,7 @@ header nav ul li a {
 }
 
 /* Aanmeld btn */
-header nav ul li:nth-child(6) a {
+header nav ul li:nth-child(5) a {
   background: #e1def4;
   padding: 6px 10px;
   border-radius: 20px;
@@ -240,7 +240,7 @@ header nav ul li:nth-child(6) a {
 }
 
 /* Aanmeld btn stripe */
-header nav ul li:nth-child(6) a:before {
+header nav ul li:nth-child(5) a:before {
   content: "";
   display: block;
   width: 1px;
@@ -722,7 +722,7 @@ footer {
   padding: 1rem;
 }
 
-ul {
+footer ul {
   list-style: none;
 }
 
