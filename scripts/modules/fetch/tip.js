@@ -7,7 +7,7 @@ const slider = document.querySelector(".instructions-slider")
  * Renders the tips
  * @returns {Promise}
  */
-async function fillTips() {
+async function initTips() {
   return new Promise(async (resolve)=>{
     const tips = await getTip()
     tips.data.forEach(tip=>{
@@ -33,4 +33,4 @@ async function fillTips() {
   })
 }
 
-export default fillTips()
+export default initTips()

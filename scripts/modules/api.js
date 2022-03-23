@@ -24,6 +24,10 @@ async function getTip() {
   return await fetchApi(`${baseUrl}/tip`);
 }
 
+async function getTipById(id) {
+  return await fetchApi(`${baseUrl}/tip/${id}`)
+}
+
 async function getSection() {
   return await fetchApi(`${baseUrl}/section`);
 }
@@ -44,4 +48,4 @@ async function fetchApi(endpoint) {
   }
 }
 
-export { getAllPages, getPage, getFaq, getTip, getSection };
+export { getAllPages, getPage, getFaq, getTip, getTipById, getSection };
