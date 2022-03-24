@@ -13,7 +13,7 @@ async function getAllPages() {
  * @returns {Promise} response from the api endpoint
  */
 async function getPage(slug) {
-  return await fetchApi(`${baseUrl}/page/${slug}`);
+  return await fetchApi(`${baseUrl}/page/slug/${slug}`);
 }
 
 async function getFaq() {
